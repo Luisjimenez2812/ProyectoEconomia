@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mi perfil</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="assets/css/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo_MultiAcademicos.png" type="image/x-icon">
+    <link href="assets/css/porfile.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="height: 100vh; margin-left: -15;">
+            <div class="col-md-2" style="background-color: rgb(40, 182, 190); height:auto;">
+                <center>
+                <img alt="Bootstrap Image Preview" src="assets/img/logo.png" id="imgLogo">
+                
+                    <div class="btn-group btn-group-vertical btn-group-lg" role="group" id="menu" style="padding:30px;padding-top: 80px;">
+
+
+                    <button class="btn btn-secondary" type="button" style="background-color: transparent; margin-bottom: 10px;" id="menu" onclick="irMain()">
+                        Inicio
+                    </button>
+
+                    <button class="btn btn-secondary" type="button" style="background-color: transparent; margin-bottom: 10px;" id="menu">
+                        Mis Cursos
+                    </button>
+                    
+                    <button class="btn btn-secondary" type="button" style="background-color: transparent; margin-bottom: 10px;">
+                        Mensajería
+                    </button>
+                    
+                    <button class="btn btn-secondary" type="button" style="background-color: transparent; margin-bottom: 10px;">
+                        Agenda
+                    </button>
+                    
+                    <button class="btn btn-secondary" type="button" style="background-color: transparent;  margin-bottom: 10px;" onclick="location.href='index.html'">
+                        Cerrar Sesión
+                    </button>
+
+                    </div>
+                </center>
+            </div>
+            <div class="col-md-10" style="
+            padding-left: 0px;
+            padding-right: 0px;">
+                <nav class="navbar navbar-light bg-light" style="background-color: rgba(15, 15, 15, 0.719); padding-top: 20px; height: 80px;">
+                    <div class="input-group mb-3" style="padding-top: 0.2px;">
+                        <input type="text" class="form-control" placeholder="Buscar Tutoría" aria-label="Buscar Tutoría" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+							<svg id="i-search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20px" height="20px" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+								<circle cx="14" cy="14" r="12" />
+								<path d="M23 23 L30 30"/>
+							</svg>
+						</button>
+
+                    </div>
+                </nav>
+                <div class="row " style="height: 100vh; margin-left: -15;">
+                    <div class="col-md-9 " style="
+                    padding-left: 40px; padding-top: 45px;">
+                        <div class="row ">
+                            <div class="col-md-12 ">
+                                <div class="row" id='info-alumno'>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-md-6 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 " style="background-color: rgb(241, 241, 241); padding-top: 45px; ">
+                        <h3>
+                            <center>
+                                Actividades
+                            </center>
+                        </h3>
+                        <ul>
+                            <li class="list-item ">
+                                Reunion 110
+                            </li>
+                            <li class="list-item ">
+                                Examen 111
+                            </li>
+                            <li class="list-item ">
+                                Examen 112
+                            </li>
+                            <li class="list-item ">
+                                Facilisis in pretium nisl aliquet
+                            </li>
+                            <li class="list-item ">
+                                Nulla volutpat aliquam velit
+                            </li>
+                            <li class="list-item ">
+                                Faucibus porta lacus fringilla vel
+                            </li>
+                            <li class="list-item ">
+                                Aenean sit amet erat nunc
+                            </li>
+                            <li class="list-item ">
+                                Eget porttitor lorem
+                            </li>
+                        </ul>
+                        <img alt="Bootstrap Image Preview" src="assets/img/calender.png" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="addturoria" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Nueva Tutoría</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form id='form-tutoria'>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">code:</label>
+                                <input type="text" class="form-control" id="code-tutorships">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="name-tutoria">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Descripción:</label>
+                                <textarea class="form-control" id="description-text"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Horas a Impartir:</label>
+                                <input type="number" class="form-control" id="hours">
+                            </div>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Precio:</label>
+                                <input type="number" class="form-control" id="prize">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Agregar imagen para tutoria:</label>
+                                <input type="file" class="form-control" id="image" accept="image/*">
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                <input type="button" onclick='registrartutoria()' class="btn btn-primary" value="Guardar Cambios"> </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/js/jquery.min.js "></script>
+    <script src="assets/js/js/bootstrap.min.js "></script>
+    <script src="assets/js/js/scripts.js "></script>
+    <script src="Scripts/axios.min.js"></script>
+    <script src="Scripts/alumnos.js"></script>
+
+
+</body>
+
+</html>

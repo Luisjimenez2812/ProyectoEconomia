@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/registro.css" rel="stylesheet" />
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link href="assets/css/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/logo_MultiAcademicos.png" type="image/x-icon">
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6"><img src="assets/img/logo_MultiAcademicos.png" loading="lazy" width="235px"
+                    class="image-2 img-fluid">
+                <div class="text-block" id="slogan"><strong><em>Juntos aprendemos más</em></strong></div>
+                <form class="form " id="form-tutor">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Nombre Completo">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="user" name="user" placeholder="Usuario">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Telefono">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="fecha-nac" name="fecha-nac"
+                            placeholder="Fecha Nacimiento">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="password"
+                            placeholder="Contraseña">
+                    </div>
+                    <div class="row d-flex justify-content-center " style="padding-top: 10px; padding-bottom: 10px;">
+                    <center>
+                        Alumno <input type="radio" name="usuario" id="alumno" style="width: 15px !important; margin-right: 15px;" checked>    
+                        Tutor <input type="radio" name="usuario" id="tutor" style="width: 15px !important;">   
+                    </center>
+                    </div>
+
+                    <input type="button" onclick="registrartutor()" class="btn btn-outline-info" value="Registrarse">
+                </form>
+            </div>
+            <div class="col-md-6 "><img src="assets/img/registro.jpg " loading="lazy " class="image-1"></div>
+        </div>
+    </div>
+
+    <script src="Scripts/axios.min.js "></script>
+    <script src="Scripts/Tutoria.js "></script>
+
+    <script src="assets/js/js/jquery.min.js "></script>
+    <script src="assets/js/js/bootstrap.min.js "></script>
+    <script src="assets/js/js/scripts.js "></script>
+    <script src="Scripts/axios.min.js"></script>
+    <script src="Scripts/registro.js "></script>
+
+</body>
+
+</html>

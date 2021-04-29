@@ -1,0 +1,91 @@
+.body {
+    padding-top: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    background-color: #4fb0b9;
+}
+
+.container {
+    width: 1000px !important;
+    height: 600px !important;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+.image-1 {
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.image-2 {
+    margin-top: 50px;
+    margin-bottom: -10px;
+    margin-left: 120px;
+}
+
+.col-md-6 {
+    padding: 0;
+}
+
+.text-block {
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #4fb0b9;
+    text-align: center;
+}
+
+.form {
+    position: absolute;
+    left: 100px;
+    right: 60px;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+input {
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.btn-login {
+    color: #FFFFFF;
+    margin-top: 10px;
+    position: relative;
+    left: 120px;
+    border-radius: 10px;
+    background-color: #4fb0b9;
+}
+
+.nav {
+    margin-bottom: 20px;
+    margin-top: -15px;
+    padding-left: 20px;
+}
+
+@media (max-width:1450px) {
+    .image-1 {
+        width: 100%;
+        height: 600px;
+    }
+    #slogan {
+        display: none;
+    }
+}
+
+@media (max-width:1300px) {
+    .image-1 {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+}
+
+.btn-outline-info {
+    margin-top: 15px !important;
+    width: 340px !important;
+    height: 34px !important;
+}

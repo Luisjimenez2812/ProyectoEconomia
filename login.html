@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/login.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/img/logo_MultiAcademicos.png" type="image/x-icon">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+
+<body class="body">
+    <div class="container">
+        <div class="col">
+            <div class="col-md-6"><img src="assets/img/login.jpg" loading="lazy" width="479px" class="image-1"></div>
+            <div class="col-md-6"><img src="assets/img/logo_MultiAcademicos.png" loading="lazy" width="235px" class="image-2">
+                <div class="text-block" id="slogan"><strong><em>Juntos aprendemos más</em></strong></div>
+                <form class="form" id='form-login'>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="user" name="user" placeholder="Usuario">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+                    </div>
+                    <button type="button" onclick='login()' class="btn btn-login">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/axios.min.js"></script>
+    <script src="Scripts/login.js"></script>
+</body>
+
+</html>

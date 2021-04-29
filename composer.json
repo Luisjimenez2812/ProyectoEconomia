@@ -1,0 +1,7 @@
+{
+    "name": "luis-jimenez/proyecto-economia2",
+    "description": "Creacion de proyecto2",
+    "require": {
+        "kreait/firebase-php": "^5.17"
+    }
+}

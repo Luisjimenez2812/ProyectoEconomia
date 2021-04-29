@@ -1,0 +1,13 @@
+@media (max-width:1400px) {
+    #menu {
+        display: none;
+    }
+    #imgLogo {
+        display: none;
+    }
+}
+
+#imgLogo {
+    padding: 20px;
+    padding-top: 80px;
+}
